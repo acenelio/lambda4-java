@@ -26,6 +26,10 @@ public class Product {
 		this.price = price;
 	}
 
+	public String nonStaticUpperCaseName() {
+		return name.toUpperCase();
+	}
+	
 	public static String staticUpperCaseName(Product p) {
 		return p.getName().toUpperCase();
 	}
